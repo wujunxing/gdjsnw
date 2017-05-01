@@ -129,6 +129,9 @@ table {border-collapse: collapse;border-spacing:0;}
 .col02{
     width:730px; float:right;
 }
+.col03{
+    width:720px; float:right;
+}
 
 .imenu{
     background-color:#cccc99;
@@ -139,6 +142,9 @@ table {border-collapse: collapse;border-spacing:0;}
 }
 .imenu .nbtz{
     background-image:url(../img/nbtz.jpg);
+}
+.imenu .xzzx{
+    background-image:url(../img/xzzx.jpg);
 }
 .imenu .d1{
     height:20px;
@@ -187,11 +193,11 @@ table {border-collapse: collapse;border-spacing:0;}
     background-repeat: repeat-x;
 }
 .index_title01 .title01{
-    display:block; float:left; padding-left:10px; padding-right:40px; height:32px; color:#ffffff; font-weight:bold; font-size:13px; line-height:32px;
-    background-image:url(../img/title01_01.jpg); background-position:right bottom; background-repeat:no-repeat;
+    display:block; float:left; padding-left:10px; padding-right:40px; height:32px; color:#b75e00; font-weight:bold; font-size:13px; line-height:32px;
+    background-image:url(../img/title01_01.jpg); background-position:left bottom; background-repeat:no-repeat;
 }
 .index_title01 .title01 span{
-    display:block; height:32px; padding-left:20px; background-image:url(../img/title01_01.jpg); background-position:left center;
+    display:block; height:32px; padding-left:20px;
 }
 .index_title01 .more{
     display:block; float:right; margin-right:16px;
@@ -451,7 +457,7 @@ table {border-collapse: collapse;border-spacing:0;}
 .newslist .p1{
     padding:18px;
     float:left;
-    width:578px;
+    width:558px;
 }
 .newslist .n_title{
     height:22px;
@@ -485,7 +491,7 @@ table {border-collapse: collapse;border-spacing:0;}
     font-size:18px;
     text-align:center;
     padding:41px 0px;
-    width:140px;
+    width:120px;
 }
 
 
@@ -493,16 +499,16 @@ table {border-collapse: collapse;border-spacing:0;}
 
 }
 .newscontent .date{
-    width:75px; float:left; text-align:center;
+    width:70px; float:left; text-align:center;
 }
 .newscontent .date div{
-    height:72px; font-size:36px; line-height:72px; font-family:Georgia; color:#fff; background-color:#477575;
+    height:60px; font-size:36px; line-height:60px; font-family:Georgia; color:#fff; background-color:#477575;
 }
 .newscontent .date span{
     display:block; font-size:14px; font-family:Georgia; color:#fff; background-color:#ff9900;
 }
 .newscontent .detail{
-    width:660px; float:right;
+    width:650px; float:right;
 }
 .newscontent .newstitle{
     font-size: 16px;
