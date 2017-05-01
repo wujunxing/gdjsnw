@@ -117,26 +117,33 @@ table {border-collapse: collapse;border-spacing:0;}
 /* index */
 .index_banner{
     width:1000px; height:300px; margin:0 auto;
-     box-shadow:0px 1px 5px 0px #4a4a4a;
+    box-shadow:0px 1px 5px 0px #4a4a4a;
 }
 .index_bannerimg{
     width:1000px; height:300px;
 }
 
 .col01{
-    width:320px; float:left;
+    width:260px; float:left;
 }
 .col02{
-    width:670px; float:right;
+    width:730px; float:right;
 }
 
 .imenu{
-
+    background-color:#cccc99;
+}
+.imenu .title01{
+    height:30px; padding-top:30px; padding-left:65px; line-height:24px; font-size:14px; color:#555; font-weight:bold;
+    background-position:10px 10px; background-repeat:no-repeat;
+}
+.imenu .nbtz{
+    background-image:url(../img/nbtz.jpg);
 }
 .imenu .d1{
-    height:30px;
+    height:20px;
     background-image:url(../img/imenu_01.jpg);
-    background-position:center bottom;
+    background-position:center top;
     background-repeat:no-repeat;
 }
 .imenu .d2{
@@ -144,18 +151,40 @@ table {border-collapse: collapse;border-spacing:0;}
     background-position:center bottom;
     background-repeat:repeat-y;
 }
+.imenu ul{
+    padding:0px 10px;
+}
+.imenu ul li{
+    display:block; padding-left:10px; height:24px; overflow:hidden;
+    background-image:url(../img/list02.gif); background-position:0 0; background-repeat:no-repeat;
+}
+.imenu ul a{
+    color:#555; line-height:24px;
+}
 .imenu .d3{
-    height:30px;
+    height:20px;
     background-image:url(../img/imenu_03.jpg);
-    background-position:center top;
+    background-position:center bottom;
     background-repeat:no-repeat;
 }
+.imenu .more{
+    padding:5px 30px; text-align:right;
+}
 
-.index_part01{
+.indexlist{
+    width:730px; overflow:hidden;
+}
+.indexlist .content{
+    width:760px;
+}
+.indexlist .item{
+    width:360px; height:303px; overflow:hidden; float:left; margin-right:10px; margin-bottom:20px;
 }
 .index_title01{
-    height:32px; position:relative;
-    background-image:url(../img/title01_02.jpg); background-position:right bottom; background-repeat:repeat-x;
+    height:32px;
+    background-image: url(../img/title01_02.jpg);
+    background-position: right bottom;
+    background-repeat: repeat-x;
 }
 .index_title01 .title01{
     display:block; float:left; padding-left:10px; padding-right:40px; height:32px; color:#ffffff; font-weight:bold; font-size:13px; line-height:32px;
@@ -171,66 +200,47 @@ table {border-collapse: collapse;border-spacing:0;}
     font-size:12px;  line-height:32px; display:block; color:#336666;
 }
 .index_content01{
-    padding:20px; border:1px solid #ccc; border-top:none;
+    padding:15px; border:1px solid #ccc; border-top:none;
 }
+.index_topone{
 
-.index_topnews{
-    border-bottom:1px dashed #cedbe4; padding-bottom:16px; margin-bottom:20px;
 }
-.index_topnews h5{
-    height:32px; overflow:hidden; 
+.index_topone .cover01{
+    width:84px; float:left;
 }
-.index_topnews h5 a{
-    line-height:32px; font-size:16px; color:#333; font-weight:normal;
+.index_topone .cover01 a{
+    display:block; width:82px; height:82px; border:1px solid #ff9900;
 }
-.index_topnews .sub{
-    height:60px; line-height:20px; text-indent:2em; color:#a0a0a0;
+.index_topone .cover01 img{
+    width:80px; height:80px; border:1px solid #fff;
 }
-.index_topnews .more{
-    height:26px; line-height:26px;
+.index_topone h5{
+    width:230px; height:22px; overflow:hidden; line-height:20px; float:right;
 }
-.index_topnews .more a{
-    display:block; float:left;
+.index_topone h5 a{
+    font-size:13px;
 }
-.index_topnews .more span{
-    display:block; float:right;
+.index_topone .sub{
+    width:230px; height:72px; overflow:hidden; float:right; line-height:18px; text-indent:2em;
+}
+.index_topone .sub a{
+    color:#999; font-size:12px;
 }
 
 .index_newslist01{
-
+    margin-top:2px;
 }
 .index_newslist01 li{
     height:24px; padding-left:10px; overflow:hidden; background-image:url(../img/list_point.gif); background-position:left top; background-repeat:no-repeat;
 }
 .index_newslist01 span{
-    display:block; width:80px; height:24px; overflow:hidden; float:right;
+    display:block; width:40px; height:24px; overflow:hidden; float:right;
 }
 .index_newslist01 a{
-    display:block; width:510px; height:24px; overflow:hidden; float:left; 
+    display:block; width:240px; height:24px; overflow:hidden; float:left; 
 }
 
-.index_newslist02{
 
-}
-.index_newslist02 li{
-    height:24px; padding-left:10px; overflow:hidden; background-image:url(../img/list_point.gif); background-position:left top; background-repeat:no-repeat;
-}
-.index_newslist02 span{
-    display:block; width:80px; height:24px; overflow:hidden; float:right;
-}
-.index_newslist02 a{
-    display:block; width:340px; height:24px; overflow:hidden; float:left; 
-}
-
-.index_newslist03{
-
-}
-.index_newslist03 li{
-    height:24px; padding-left:10px; overflow:hidden; background-image:url(../img/list_point.gif); background-position:left top; background-repeat:no-repeat;
-}
-.index_newslist03 a{
-    display:block; width:265px; height:24px; overflow:hidden; float:left; 
-}
 
 /* log in */
 .login{
