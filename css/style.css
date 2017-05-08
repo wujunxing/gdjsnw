@@ -521,10 +521,12 @@ table {border-collapse: collapse;border-spacing:0;}
 .paging a:hover,.paging a.checka{background:#ff9900; color:#fff;}
 
 .newslist{
-
 }
 .newslist .item{
-    border:2px solid #c1d1d1; margin-bottom:20px;
+    border:1px solid #fff; background-color:#f3f3ef;
+}
+.newslist .item_w{
+    padding-bottom:30px; background-image:url(../img/newslist_bg.jpg); background-position:center bottom; background-repeat:no-repeat;
 }
 .newslist .p1{
     padding:18px;
@@ -538,7 +540,7 @@ table {border-collapse: collapse;border-spacing:0;}
     cursor: pointer;
 }
 .newslist .n_title a{
-    color: #555555;
+    color: #ff9900;
     font-size:14px;
     font-weight:bold;
 }
@@ -556,8 +558,8 @@ table {border-collapse: collapse;border-spacing:0;}
 }
 
 .newslist .p2{
-    background:#c1d1d1;
-    color:#336666;
+    background:#e5e5b0;
+    color:#555;
     float:right;
     font-family:Georgia;
     font-size:18px;
