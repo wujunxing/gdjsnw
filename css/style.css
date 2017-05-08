@@ -236,7 +236,7 @@ table {border-collapse: collapse;border-spacing:0;}
     width:760px;
 }
 .indexlist .item{
-    width:360px; height:308px; overflow:hidden; float:left; margin-right:10px; margin-bottom:20px;
+    width:360px; height:308px; overflow:hidden; float:left; margin-right:10px; margin-bottom:8px;
 }
 .index_title01{
     height:32px;
