@@ -214,10 +214,10 @@ table {border-collapse: collapse;border-spacing:0;}
 }
 .imenu ul li{
     display:block; padding-left:10px; height:24px; overflow:hidden;
-    background-image:url(../img/list02.gif); background-position:0 0; background-repeat:no-repeat;
+    background-image:url(../img/list03.gif); background-position:0 0; background-repeat:no-repeat;
 }
 .imenu ul a{
-    color:#555; line-height:24px;
+    color:#ff9900; line-height:24px;
 }
 .imenu .d3{
     height:20px;
@@ -228,7 +228,9 @@ table {border-collapse: collapse;border-spacing:0;}
 .imenu .more{
     padding:5px 30px; text-align:right;
 }
-
+.imenu .more a{
+    color:#ff9900;
+}
 .indexlist{
     width:730px; overflow:hidden;
 }
