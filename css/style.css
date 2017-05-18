@@ -25,6 +25,21 @@ table {border-collapse: collapse;border-spacing:0;}
 .f_left20{float:left; margin-left:20px;}
 .f_left_2{float:left; margin-left:10px;}
 
+#floatimg {
+    z-index:100; left:2px;  position:absolute; top:43px;
+}
+#floatimg img{
+    width:252px; height:172px;
+}
+#closead{
+    position:absolute; right:0px; bottom:0px; width:60px; height:20px; background-color:#CCC; color:red;
+    text-align:center; border:1px solid #999; line-height:20px; cursor:pointer;
+    /* for IE */
+    filter:alpha(opacity=60);
+    /* CSS3 standard */
+    opacity:0.6;
+}
+
 .page_head{
     width:1000px; height:120px; margin:0 auto;
 }
@@ -598,4 +613,70 @@ table {border-collapse: collapse;border-spacing:0;}
 }
 .newscontent .textcontent{
     margin-top:30px;
+}
+
+
+
+
+.col_reply{
+    padding-left:80px; margin-top:20px;
+}
+
+.bbs_reply{
+
+}
+.bbs_reply .head{
+    border-bottom:1px solid #e6e6e6;
+}
+.bbs_reply .head b{
+    color:#ff7519; font-size:18px;
+}
+.bbs_reply .item{
+    border-bottom:1px dashed #e6e6e6; padding:10px 0;
+}
+.replylist_cover{
+    float:left; width:60px;
+}
+.replylist_cover img{
+    width:50px; height:50px; border-radius:50px;
+}
+.replylist_content{
+    float:right; width:550px;
+}
+.replylist_content .name{
+    color:#ff7519; margin-right:6px;
+}
+.replylist_content .date{
+    color:#999;
+}
+.replylist_content .message{
+
+}
+
+
+.to_reply_cover{
+    float:left; width:60px;
+}
+.to_reply_cover img{
+    width:50px; height:50px; border-radius:50px;
+}
+.to_reply_content{
+    float:right; width:560px;
+}
+#emcontainner{
+
+}
+.reply_bt{
+    display:block;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 20px;
+    background-color: #ff8b3d;
+    border: 1px solid #ff8b3d;
+    text-align:center;
+    color:#fff;
+}
+.reply_bt:hover{
+    color:#fff;
 }
