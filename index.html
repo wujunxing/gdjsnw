@@ -12,6 +12,7 @@
 <body>
     <div class="page_head">
         <div class="logo"><img src="img/logo.png" alt="" /></div>
+        <div class="links">欢迎你，<b>勤劳的小蜜蜂</b>&nbsp;[<a href="#">个人中心</a>]</div>
         <div class="clear"></div>
     </div>
 
@@ -25,7 +26,22 @@
     <div class="page_nav_nw">
         <ul id="nav_nw">
             <li class="li01"><a href="javascript:void();" class="link01">首页</a></li>
-            <li class="li01"><a href="javascript:void();" class="link01">企业概况</a></li>
+            <li class="li01">
+            <a href="javascript:void();" class="link01">企业新闻</a>
+                <ul class="ul02">
+                    <li class="li02"><a href="javascript:void();" class="link02">二级导航01</a></li>
+                    <li class="li02"><a href="javascript:void();" class="link02">二级导航02</a></li>
+                    <li class="li02">
+                        <a href="javascript:void();" class="link02">二级导航03</a>
+                        <ul class="ul03">
+                            <li class="li03"><a href="javascript:void();" class="link03">三级导航01</a></li>
+                            <li class="li03"><a href="javascript:void();" class="link03">三级导航02</a></li>
+                            <li class="li03"><a href="javascript:void();" class="link03">三级导航03</a></li>
+                        </ul>
+                    </li>
+                    <li class="li02"><a href="javascript:void();" class="link02">二级导航04</a></li>
+                </ul>
+            </li>
             <li class="li01"><a href="javascript:void();" class="link01">党建工作</a></li>
             <li class="li01"><a href="javascript:void();" class="link01">工程管理·技术交流</a></li>
             <li class="li01"><a href="javascript:void();" class="link01">人力资源·青年成长</a></li>
@@ -286,8 +302,8 @@
     <!--漂浮 floattype01 -->
     <!--<div class="floatad floattype01" style="width:252px; height:172px;"><a href="#"><img src="img/floatimg.jpg" /></a><div class="closead">关闭</div></div>-->
     <!--固定 floattype02 -->
-    <div class="floatad floattype02" style="width:252px; height:172px; right:2px; bottom:2px;"><a href="#"><img src="img/floatimg.jpg" /></a><div class="closead">关闭</div></div>
-    <!--<div class="floatad floattype02" style="width:252px; height:172px; right:2px; top:2px;"><a href="#"><img src="img/floatimg.jpg" /></a><div class="closead">关闭</div></div>
+    <!--<div class="floatad floattype02" style="width:252px; height:172px; right:2px; bottom:2px;"><a href="#"><img src="img/floatimg.jpg" /></a><div class="closead">关闭</div></div>
+    <div class="floatad floattype02" style="width:252px; height:172px; right:2px; top:2px;"><a href="#"><img src="img/floatimg.jpg" /></a><div class="closead">关闭</div></div>
     <div class="floatad floattype02" style="width:252px; height:172px; left:2px; top:0px;"><a href="#"><img src="img/floatimg.jpg" /></a><div class="closead">关闭</div></div>
     <div class="floatad floattype02" style="width:252px; height:172px; left:2px; bottom:0px;"><a href="#"><img src="img/floatimg.jpg" /></a><div class="closead">关闭</div></div>-->
 
@@ -298,6 +314,15 @@
 
     <script src="js/adfloat.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+
+    <script type="text/javascript">
+        //1浮动2左下3右下
+        adImg({ adtype: 1, adwidth: 252, adheight: 172, adtitle: 'test', adimgsrc: 'img/floatimg.jpg', adhref: 'https://wujunxing.github.io/gdjsnw/' })
+
+        adImg({ adtype: 2, adwidth: 252, adheight: 172, adtitle: 'test', adimgsrc: 'img/floatimg.jpg', adhref: 'https://wujunxing.github.io/gdjsnw/' })
+
+        adImg({ adtype: 3, adwidth: 252, adheight: 172, adtitle: 'test', adimgsrc: 'img/floatimg.jpg', adhref: 'https://wujunxing.github.io/gdjsnw/' })
+    </script>
 
 </body>
 </html>

@@ -1,5 +1,35 @@
 ﻿/*! Product by Wu Jun Xing */
 
+function adImg(addata) {
+    var newdome;
+    if (addata.adtype == 1) {
+        newdome = $("<div class='floatad floattype01'><a href='#'><img src='img/floatimg.jpg' /></a><div class='closead'>关闭</div></div>");
+    }
+    if (addata.adtype == 2) {
+        newdome = $("<div class='floatad floattype02'><a href='#'><img src='img/floatimg.jpg' /></a><div class='closead'>关闭</div></div>");
+        newdome.css({left:"0px",bottom:"0px"})
+    }
+    if (addata.adtype == 3) {
+        newdome = $("<div class='floatad floattype02'><a href='#'><img src='img/floatimg.jpg' /></a><div class='closead'>关闭</div></div>");
+        newdome.css({ right: "0px", bottom: "0px" })
+    }
+    if (addata.adwidth > 0) {
+        newdome.width(addata.adwidth);
+    }
+    if (addata.adheight > 0) {
+        newdome.height(addata.adheight);
+    }
+    if (addata.adtitle.length > 3) {
+        newdome.find("a").attr("title", addata.adtitle)
+    }
+    if (addata.adhref.length > 3) {
+        newdome.find("a").attr("href", addata.adhref)
+    }
+    if (addata.adimgsrc.length > 3) {
+        newdome.find("img").attr("src", addata.adimgsrc)
+    }
+    $("body").append(newdome);
+}
 $(function () {
     //float ad
     if ($(".floattype01").length > 0) {
