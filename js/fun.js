@@ -1,5 +1,10 @@
 ﻿$(function () {
     /*主要导航菜单*/
+    $("#nav_nw .ul02").each(function() {
+        var tarwidth = $(this).parent().width();
+        $(this).width(tarwidth);
+        $(this).find(".ul03").css({ left: (tarwidth + "px") });
+    });
     $("#nav_nw .li01").hover(function () {
         $(this).find(".ul02").stop().slideDown(400);
     }, function () {

@@ -99,10 +99,10 @@ table {border-collapse: collapse;border-spacing:0;}
     
 }
 #nav_nw .li02{
-    display:block; height:30px; width:100px; position:relative; border-top:thin solid #ffac00;
+    display:block; height:30px; position:relative; border-top:thin solid #ffac00;
 }
 #nav_nw .link02{
-    display:block; height:30px; width:90px; padding-left:0 5px; text-align:center; overflow:hidden; color:#7d0000; font-size:12px; line-height:30px;
+    display:block; height:30px; padding-left:0 5px; text-align:center; overflow:hidden; color:#7d0000; font-size:12px; line-height:30px;
 }
 #nav_nw .link02:hover{
     background-color:#ffac00;
