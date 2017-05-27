@@ -41,14 +41,15 @@ $(function () {
     var fixTopArray = new Array();
     var fixItemLength = $(".floattype02").length;
     if (fixItemLength > 0) {
-        var browser = navigator.appName
-        var b_version = navigator.appVersion
-        var version = b_version.split(";");
-        var trim_Version = version[1].replace(/[ ]/g, "");
-        if (browser == "Microsoft Internet Explorer" && trim_Version == "MSIE6.0") {
-        $(".floattype02").css("position", "absolute");
-        for (var i = 0; i < fixItemLength; i++) {
-            fixTopArray[i] = $(".floattype02").eq(i).position().top;
+        var b_version = navigator.appVersion;
+        if (b_version == null) {
+            return false;
+        }
+        if (b_version.indexOf("MSIE6.0") != -1)
+        {
+            $(".floattype02").css("position", "absolute");
+            for (var i = 0; i < fixItemLength; i++) {
+                fixTopArray[i] = $(".floattype02").eq(i).position().top;
             }
             $(document).scroll(function () {
                 var d_scrollTop = $(document).scrollTop();
