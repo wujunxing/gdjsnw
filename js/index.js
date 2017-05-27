@@ -28,7 +28,7 @@ function adImg(addata) {
     if (addata.adimgsrc.length > 3) {
         newdome.find("img").attr("src", addata.adimgsrc)
     }
-    $("body").append(newdome);
+    $("body").append(newdome.clone());
 }
 $(function () {
     //float ad
