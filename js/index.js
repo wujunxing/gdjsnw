@@ -35,10 +35,10 @@ function adImg(addata) {
     }
 
     if (addata.adtitle.length > 3) {
-        linkdom.find("a").attr("title", addata.adtitle)
+        linkdom.attr("title", addata.adtitle)
     }
     if (addata.adhref.length > 3) {
-        linkdom.find("a").attr("href", addata.adhref)
+        linkdom.attr("href", addata.adhref)
     }
     if (addata.adimgsrc.length > 3) {
         linkdom.find("img").attr("src", addata.adimgsrc)
@@ -71,21 +71,21 @@ $(function () {
 
     //fixed ad , to fix ie6
     var fixTopArray = new Array();
-    var fixItemLength = $(".fixtype").length;
+    var fixItemLength = $(".floattype02").length;
     if (fixItemLength > 0) {
-        var browser = navigator.appName
-        var b_version = navigator.appVersion
-        var version = b_version.split(";");
-        var trim_Version = version[1].replace(/[ ]/g, "");
-        if (browser == "Microsoft Internet Explorer" && trim_Version == "MSIE6.0") {
-            $(".fixtype").css("position", "absolute");
+        var b_version = navigator.appVersion;
+        if (b_version == null) {
+            return false;
+        }
+        if (b_version.indexOf("MSIE6.0") != -1) {
+            $(".floattype02").css("position", "absolute");
             for (var i = 0; i < fixItemLength; i++) {
-                fixTopArray[i] = $(".fixtype").eq(i).position().top;
+                fixTopArray[i] = $(".floattype02").eq(i).position().top;
             }
             $(document).scroll(function () {
                 var d_scrollTop = $(document).scrollTop();
                 for (var i = 0; i < fixItemLength; i++) {
-                    $(".fixtype").eq(i).css({ "top": (fixTopArray[i] + d_scrollTop + "px") });
+                    $(".floattype02").eq(i).css({ "top": (fixTopArray[i] + d_scrollTop + "px") });
                 }
             });
         }
