@@ -26,13 +26,19 @@ table {border-collapse: collapse;border-spacing:0;}
 .f_left_2{float:left; margin-left:10px;}
 
 .floatad {
-    z-index:100; position:fixed; right:0px; bottom:0px;
+    z-index:100; position:absolute;
 }
 .floatad a{
-    display:block; width:100%; height:100%; line-height:0;
+    display:block; width:252px; height:auto; line-height:0; cursor:pointer;
 }
 .floatad img{
-    display:block; width:100%; height:100%;
+    display:block; width:252px; height:auto; cursor:pointer;
+}
+.floattype02{
+    position:fixed; left:0px; bottom:0px;
+}
+.floattype03{
+    position:fixed; right:0px; bottom:0px;
 }
 .closead{
     position:absolute; right:0px; bottom:0px; width:60px; height:20px; background-color:#CCC; color:red;
@@ -42,6 +48,7 @@ table {border-collapse: collapse;border-spacing:0;}
     /* CSS3 standard */
     opacity:0.6;
 }
+
 
 .page_head{
     width:1000px; height:120px; margin:0 auto;
