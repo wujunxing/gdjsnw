@@ -172,11 +172,11 @@ table {border-collapse: collapse;border-spacing:0;}
 }
 
 .imenu{
-    background-color:#cccc99;
+    background-color:#cccc99; padding-top:5px; padding-bottom:2px;
 }
 .imenu .title01{
-    height:30px; padding-top:30px; padding-left:65px; line-height:24px; font-size:14px; color:#555; font-weight:bold;
-    background-position:10px 10px; background-repeat:no-repeat;
+    height:30px; padding-top:22px; padding-left:65px; line-height:24px; font-size:14px; color:#555; font-weight:bold;
+    background-position:10px 2px; background-repeat:no-repeat; overflow:hidden;
 }
 .imenu .nbtz{
     background-image:url(../img/nbtz.jpg);
@@ -184,8 +184,14 @@ table {border-collapse: collapse;border-spacing:0;}
 .imenu .xzzx{
     background-image:url(../img/xzzx.jpg);
 }
+.imenu .jykx{
+    background-image:url(../img/jykx.jpg);
+}
+.imenu .qylt{
+    background-image:url(../img/qylt.jpg);
+}
 .imenu .d1{
-    height:20px;
+    height:16px; overflow:hidden;
     background-image:url(../img/imenu_01.jpg);
     background-position:center top;
     background-repeat:no-repeat;
@@ -203,19 +209,25 @@ table {border-collapse: collapse;border-spacing:0;}
     background-image:url(../img/list03.gif); background-position:0 0; background-repeat:no-repeat;
 }
 .imenu ul a{
-    color:#ff9900; line-height:24px;
+    line-height:24px;
+}
+.imenu .red a{
+    line-height:24px; color:red;
 }
 .imenu .d3{
-    height:20px;
+    height:16px; overflow:hidden;
     background-image:url(../img/imenu_03.jpg);
     background-position:center bottom;
     background-repeat:no-repeat;
 }
 .imenu .more{
-    padding:5px 30px; text-align:right;
+    padding:0px 30px; text-align:right; height:26px; overflow:hidden;
 }
 .imenu .more a{
-    color:#ff9900;
+    
+}
+.imenu .more .red{
+    color:red;
 }
 .indexlist{
     width:730px; overflow:hidden;
@@ -224,10 +236,10 @@ table {border-collapse: collapse;border-spacing:0;}
     width:760px;
 }
 .indexlist .item{
-    width:360px; height:308px; overflow:hidden; float:left; margin-right:10px; margin-bottom:8px;
+    width:360px; overflow:hidden; float:left; margin-right:10px; margin-bottom:10px;
 }
 .index_title01{
-    height:32px;
+    height:32px; overflow:hidden;
     background-image: url(../img/title01_02.jpg);
     background-position: right bottom;
     background-repeat: repeat-x;
@@ -267,6 +279,7 @@ table {border-collapse: collapse;border-spacing:0;}
 
 .index_content01{
     padding:15px; border:1px solid #ccc; border-top:none;
+    height:246px; overflow:hidden;
 }
 .index_topone{
 
@@ -290,11 +303,11 @@ table {border-collapse: collapse;border-spacing:0;}
     width:230px; height:72px; overflow:hidden; float:right; line-height:18px; text-indent:2em;
 }
 .index_topone .sub a{
-    color:#999; font-size:12px;
+    color:#999; font-size:12px; line-height:18px;
 }
 
 .index_newslist01{
-    margin-top:2px;
+    margin-top:5px;
 }
 .index_newslist01 li{
     height:24px; padding-left:10px; overflow:hidden; background-image:url(../img/list_point.gif); background-position:left top; background-repeat:no-repeat;
@@ -303,7 +316,7 @@ table {border-collapse: collapse;border-spacing:0;}
     display:block; width:40px; height:24px; overflow:hidden; float:right;
 }
 .index_newslist01 a{
-    display:block; width:240px; height:24px; overflow:hidden; float:left; 
+    display:block; width:268px; height:24px; overflow:hidden; float:left; 
 }
 
 
@@ -533,7 +546,7 @@ table {border-collapse: collapse;border-spacing:0;}
     font-weight:bold;
 }
 .newslist .n_content{
-    height:43px;
+    height:40px;
     margin-top:5px;
     overflow:hidden;
     cursor:pointer;
